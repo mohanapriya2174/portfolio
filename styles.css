@@ -5,32 +5,31 @@
   padding: 0;
   box-sizing: border-box;
 }
-.content {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  background: rgb(175, 87, 87);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
 
 nav {
   /* width: 85%; */
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   text-transform: uppercase;
-  background-color: rgb(92, 92, 148);
+  background-color: rgb(175, 87, 87);
   margin: 0%;
+}
+nav ul {
+  padding-left: 200px;
 }
 
 nav ul li {
   display: inline-flex;
-
+  border: 2px solid beige;
+  padding: 5px;
   list-style: none;
-  margin: 10px 15px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 8px;
+  margin-bottom: 9px;
 }
 nav ul li a {
   text-decoration: none;
@@ -42,8 +41,16 @@ nav ul li a {
 nav ul li a:hover {
   color: black;
 }
-
-.content ul {
+.content {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: rgb(175, 87, 87);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.content .paragraph {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -52,7 +59,7 @@ nav ul li a:hover {
   margin: 1rem;
   padding-left: 20px;
 }
-.content ul .about {
+.content .paragraph .about {
   position: relative;
   width: 60%;
   height: 300px;
@@ -60,12 +67,13 @@ nav ul li a:hover {
 }
 .content .about h3 {
   color: azure;
+  padding-top: 20px;
 }
 .content .about p {
   color: black;
   font-weight: 600;
 }
-.content ul img {
+.content .paragraph img {
   position: absolute;
   left: 63%;
   width: 500px;
@@ -95,4 +103,51 @@ nav ul li a:hover {
 .project-made:hover {
   transform: scale(1.05);
   box-shadow: 0 0 10px green;
+}
+.skills {
+  background-color: rgb(138, 207, 138);
+  /* padding: 50px; */
+}
+.skills h2 {
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-bottom: 10px;
+  color: black;
+}
+.skills .skill-points summary {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  transition: transfrm 0.2s;
+}
+.skills .skill-points summary:hover {
+  transform: scale(1.05);
+}
+.skills .skill-points p {
+  background-color: palevioletred;
+  padding: 20px;
+}
+.icons {
+  margin-left: 50px;
+}
+
+.icons a {
+  font-size: 50px;
+  margin-right: 20px;
+  color: #b0b656;
+  transition: all 0.3s ease;
+}
+
+.icons div {
+  margin-left: 8%;
+}
+
+.icons a:hover {
+  color: black;
+}
+
+.icons h2 {
+  font-size: 28px;
+  color: black;
 }

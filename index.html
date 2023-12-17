@@ -16,15 +16,17 @@
         <nav>
           <ul>
             <li><a href="#">HOME</a></li>
-            <li><a href="#">PROJECT</a></li>
-            <li><a href="#">SKILLS</a></li>
-            <li><a href="#">CONTACT ME</a></li>
+            <li><a href="#project">PROJECT</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#contact">CONTACT ME</a></li>
           </ul>
         </nav>
+        <hr>
         <div class="content">
-          <ul>
+          <div class="paragraph">
             <div class="about">
               <h1>Mohanapriya S</h1>
+              <hr>
               <h3>Computer Science and Business Systems Student</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -34,11 +36,11 @@
                 sit amet consectetur, adipisicing elit.
               </p>
             </div>
-            <img src="images/IMG_20230413_221700.jpg" alt="" />
-          </ul>
+            <img src="images/IMG_20231217_115111.jpg" alt="" />
+          </div class="paragraph">
         </div>
       </div>
-      <div class="project">
+      <div class="project" id="project">
         <h2>projects</h2>
         <div class="project-made">
           <h3>Guess My Number!</h3>
@@ -60,24 +62,37 @@
           <a href="#" class="btn">view on GitHub</a>
         </div>
       </div>
-      <div class="skills">
+      <div class="skills" id="skills">
         <h2>Skills</h2>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>C language</li>
-        </ul>
+        <details class="skill-points">
+          <summary>HTML</summary>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos blanditiis dolores libero facilis ex illum pariatur laudantium, rem modi ratione aut optio non possimus! Reiciendis non ipsum minus ipsa fugit.</p>
+        </details>
+        <hr>
+        <details class="skill-points">
+          <summary>CSS</summary>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos blanditiis dolores libero facilis ex illum pariatur laudantium, rem modi ratione aut optio non possimus! Reiciendis non ipsum minus ipsa fugit.</p>
+        </details>
+        <hr>
+        <details class="skill-points">
+          <summary>JavaScript</summary>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos blanditiis dolores libero facilis ex illum pariatur laudantium, rem modi ratione aut optio non possimus! Reiciendis non ipsum minus ipsa fugit.</p>
+        </details>
+        <hr>
+        <details class="skill-points">
+        <summary>C language</summary>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos blanditiis dolores libero facilis ex illum pariatur laudantium, rem modi ratione aut optio non possimus! Reiciendis non ipsum minus ipsa fugit.</p>
+        <details>
       </div>
-      <footer>
+      <div class="icons" id="contact">
         <h2>Contact</h2>
-        <div>
+        <div class="contact">
           <a href="#"><i class="fab fa-linkedin-in"></i></a>
           <a href="#"><i class="fab fa-twitter"></i></a>
           <a href="#"><i class="fab fa-whatsapp"></i></a>
           <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
-      </footer>
+      </div>
     </div>
   </body>
 </html>
