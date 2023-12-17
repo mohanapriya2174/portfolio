@@ -63,9 +63,9 @@ nav ul li a:hover {
   position: relative;
   width: 60%;
   height: 300px;
-  padding: 200px 0px 0px 50px;
+  padding: 50px 0px 0px 50px;
 }
-.content .about h3 {
+.content .about h2 {
   color: azure;
   padding-top: 20px;
 }
@@ -102,7 +102,7 @@ nav ul li a:hover {
 }
 .project-made:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 10px green;
+  box-shadow: 0 0 10px rgb(138, 207, 138);
 }
 .skills {
   background-color: rgb(138, 207, 138);
@@ -125,7 +125,7 @@ nav ul li a:hover {
   transform: scale(1.05);
 }
 .skills .skill-points p {
-  background-color: palevioletred;
+  background-color: rgb(138, 207, 138);
   padding: 20px;
 }
 .icons {
