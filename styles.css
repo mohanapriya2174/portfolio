@@ -11,6 +11,7 @@ nav {
   padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   text-transform: uppercase;
@@ -19,6 +20,7 @@ nav {
 }
 nav ul {
   padding-left: 200px;
+  display: flex;
 }
 
 nav ul li {
@@ -49,6 +51,7 @@ nav ul li a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  overflow: hidden;
 }
 .content .paragraph {
   display: flex;
@@ -62,8 +65,8 @@ nav ul li a:hover {
 .content .paragraph .about {
   position: relative;
   width: 60%;
-  height: 300px;
-  padding: 50px 0px 0px 50px;
+  /* height: 300px; */
+  padding: 100px 0px 0px 50px;
 }
 .content .about h2 {
   color: azure;
@@ -91,7 +94,6 @@ nav ul li a:hover {
   justify-content: space-between;
 }
 .project-made {
-  height: 100;
   width: 500px;
   background-color: antiquewhite;
   border: 1px solid #444;
@@ -119,7 +121,7 @@ nav ul li a:hover {
   padding-bottom: 10px;
   padding-left: 50px;
   padding-right: 50px;
-  transition: transfrm 0.2s;
+  transition: transfrom 0.2s;
 }
 .skills .skill-points summary:hover {
   transform: scale(1.05);
