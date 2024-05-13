@@ -91,6 +91,8 @@ nav ul li a:hover {
   padding: 50px;
   text-align: center;
   display: flex;
+  height: 100hv;
+  width: 100%;
   justify-content: space-between;
 }
 .project-made {
