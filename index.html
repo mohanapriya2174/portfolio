@@ -2,18 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <div class="main">
       <div class="home">
-        <nav>
+        <nav class="nav-bar">
           <ul>
             <li><a href="#">HOME</a></li>
             <li><a href="#project">PROJECT</a></li>
@@ -21,71 +25,143 @@
             <li><a href="#contact">CONTACT ME</a></li>
           </ul>
         </nav>
-        <hr>
+        <hr />
         <div class="content">
           <div class="paragraph">
             <div class="about">
+              <img src="images/IMG_20231217_115111.jpg" alt="" />
+              <h1>Hi!</h1>
               <h1>I'm Mohanapriya S</h1>
-              <hr>
+              <hr />
               <h2>Computer Science and Business Systems Student</h2>
               <p>
-                I am a passionate individual with a keen interest in web development, where I find joy in creating innovative solutions. My problem-solving skills are honed through my proficiency in C programming. 
-                <br>
-                In the realm of web development, I have a solid foundation in HTML, CSS, and JavaScript. I have successfully applied my skills by completing various projects that showcase my abilities in crafting dynamic and visually appealing websites.
-                <br>
-                 I am dedicated to continuous learning and growth, always seeking new challenges to further enhance my expertise in the exciting field of web development.
+                I am a passionate individual with a keen interest in web
+                development, where I find joy in creating innovative solutions.
+                My problem-solving skills are honed through my proficiency in C
+                programming.
+                <br />
+                In the realm of web development, I have a solid foundation in
+                HTML, CSS, and JavaScript,react,nodeJS,expressJS. I have
+                successfully applied my skills by completing various projects
+                that showcase my abilities in crafting dynamic and visually
+                appealing websites.
+                <br />
               </p>
             </div>
-            <img src="images/IMG_20231217_115111.jpg" alt="" />
-          </div class="paragraph">
+          </div>
+          <button>Resume</button>
         </div>
       </div>
       <div class="project" id="project">
-        <h2>projects</h2>
-        <div class="project-made">
-          <h3>Guess My Number!</h3>
-          <p>
-           "Juss My Number is an engaging project where users guess a randomly generated number. Points are awarded based on accuracy, offering a suspenseful experience with hidden numbers for added excitement."
-          </p>
-          <a href="#" class="btn">view on GitHub</a>
-        </div>
-        <div class="project-made">
-          <h3>Pig Game</h3>
-          <p>
-            "Pig, a thrilling two-player dice game. Roll to accumulate points, but beware the '1' – lose round points! Safeguard gains with the 'Hold' button, passing the turn strategically for intense gameplay."
-          </p>
-          <a href="#" class="btn">view on GitHub</a>
+        <h2>PROJECTS</h2>
+        <div class="project-sec">
+          <div class="project-made">
+            <h3>Guess My Number!</h3>
+            <p>
+              "Juss My Number is an engaging project where users guess a
+              randomly generated number. Points are awarded based on accuracy,
+              offering a suspenseful experience with hidden numbers for added
+              excitement."
+            </p>
+            <a href="#" class="btn">view on GitHub</a>
+          </div>
+          <div class="project-made">
+            <h3>Pig Game</h3>
+            <p>
+              "Pig, a thrilling two-player dice game. Roll to accumulate points,
+              but beware the '1' – lose round points! Safeguard gains with the
+              'Hold' button, passing the turn strategically for intense
+              gameplay."
+            </p>
+            <a href="#" class="btn">view on GitHub</a>
+          </div>
+          <div class="project-made">
+            <h3>Bank Transaction App</h3>
+            <p>
+              "Developed a bank transaction app using HTML, CSS, and JavaScript.
+              It features a login system supporting multiple accounts for
+              testing (use "mp" as user ID and "1111" as the password). The app
+              includes detailed transaction records for each user."
+            </p>
+            <a
+              href="https://mohanapriya2174.github.io/bank-transfer-app/"
+              class="btn"
+              >view on GitHub</a
+            >
+          </div>
+          <div class="project-made">
+            <h3>pizza Menu App with react</h3>
+            <p>
+              "I created a pizza menu app using React.js, incorporating
+              components, props, and states. The app features a catchy user
+              interface, allowing users to browse and customize pizza options
+              effortlessly. The dynamic UI enhances user experience by providing
+              interactive and seamless navigation through the menu."
+            </p>
+            <a href="https://mohanapriya2174.github.io/pizza-app/" class="btn"
+              >view on GitHub</a
+            >
+          </div>
+          <div class="project-made">
+            <h3>Travel web</h3>
+            <p>
+              "a travel service website with a dynamic and responsive UI. It
+              features multiple sections, providing comprehensive travel
+              information and services. The design ensures seamless navigation
+              across devices, enhancing user experience with visually appealing
+              and interactive elements."
+            </p>
+            <a href="https://mohanapriya2174.github.io/travell-web/" class="btn"
+              >view on GitHub</a
+            >
+          </div>
         </div>
       </div>
       <div class="skills" id="skills">
         <h2>Skills</h2>
-        <details class="skill-points">
-          <summary>HTML</summary>
-          <p>In HTML, I excel at structuring web content with semantic markup. My proficiency extends to creating well-organized documents, utilizing tags effectively, and ensuring accessibility. I prioritize clean and readable code, employing best practices to enhance the overall user experience. My projects showcase a keen understanding of HTML's role in building a strong foundation for web development.</p>
-        </details>
-        <hr>
-        <details class="skill-points">
-          <summary>CSS</summary>
-          <p>With CSS, I bring creativity to the forefront, leveraging style rules to enhance the visual appeal of web applications. I am adept at responsive design, using media queries and flexbox/grid layouts to ensure a seamless experience across various devices. My attention to detail extends to creating aesthetically pleasing interfaces, combining colors, fonts, and animations to achieve a harmonious and engaging user interface.</p>
-        </details>
-        <hr>
-        <details class="skill-points">
-          <summary>JavaScript</summary>
-          <p>JavaScript is a dynamic tool in my skill set, enabling me to add interactivity and functionality to web applications. I've deepened my understanding through dedicated courses, such as on Udemy, and applied my knowledge to develop interactive game projects. Proficient in event handling, DOM manipulation, and asynchronous programming, I strive to create robust and user-friendly experiences through the power of JavaScript.</p>
-        </details>
-        <hr>
-        <details class="skill-points">
-        <summary>C language</summary>
-        <p>In C programming, I exhibit a strong command over fundamental concepts, data structures, and algorithms. My coding practices prioritize efficiency and readability, ensuring robust and scalable solutions. With a keen eye for optimization, I tackle complex problems systematically, showcasing a solid foundation in C development.</p>
-        </details>
+        <div class="skill-points">
+          <p>HTML</p>
+        </div>
+        <hr />
+        <div class="skill-points">
+          <p>CSS</p>
+        </div>
+        <hr />
+        <div class="skill-points">
+          <p>JavaScript</p>
+        </div>
+        <hr />
+        <div class="skill-points">
+          <p>nodeJS</p>
+        </div>
+        <hr />
+        <div class="skill-points">
+          <p>expressJS</p>
+        </div>
+        <hr />
+        <div class="skill-points">
+          <p>MYsql</p>
+        </div>
+        <hr />
+        <div class="skill-points">
+          <p>C language</p>
+        </div>
       </div>
       <div class="icons" id="contact">
         <h2>Contact</h2>
         <div class="contact">
-          <a href="https://www.linkedin.com/in/mohanapriya-s-0345a1257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"></i></a>
+          <a
+            href="https://www.linkedin.com/in/mohanapriya-s-0345a1257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
           <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-whatsapp"></i></a>
-          <a href="https://www.instagram.com/mohanapriya__mona_?igshid=ZGNjOWZkYTE3MQ=="><i class="fab fa-instagram"></i></a>
+          <a href="mohanapriya2174@gmail.com"
+            ><i class="fa fa-envelopefa fa-envelope"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/mohanapriya__mona_?igshid=ZGNjOWZkYTE3MQ=="
+            ><i class="fab fa-instagram"></i
+          ></a>
         </div>
       </div>
     </div>
