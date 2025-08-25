@@ -4,166 +4,243 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="main">
-      <div class="home">
-        <nav class="nav-bar">
-          <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#project">PROJECT</a></li>
-            <li><a href="#skills">SKILLS</a></li>
-            <li><a href="#contact">CONTACT ME</a></li>
-          </ul>
-        </nav>
-        <hr />
-        <div class="content">
-          <div class="paragraph">
-            <div class="about">
-              <img src="images/IMG_20231217_115111.jpg" alt="" />
-              <h1>Hi!</h1>
-              <h1>I'm Mohanapriya S</h1>
-              <hr />
-              <h2>Computer Science and Business Systems Student</h2>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <h1 class="logo">MyPortfolio</h1>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="dark-toggle" onclick="toggleDarkMode()">🌙</button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <img src="profile.jpg" alt="Profile" class="profile-pic" />
+        <h2>Hello, I'm <span class="highlight">Mohanapriya</span></h2>
+        <p>A passionate web developer who loves clean design and code.</p>
+        <a href="#projects" class="btn">View My Work</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          I’m Mohanapriya, an enthusiastic web developer passionate about
+          crafting full-stack web applications and solving real-world problems
+          through technology. I specialize in JavaScript, React.js, Node.js, and
+          Express.js, with hands-on experience in building secure, scalable, and
+          responsive applications. I'm always eager to take on new challenges
+          and continue growing as a developer.
+        </p>
+        <p>
+          I'm particularly interested in backend systems, AI integration, and
+          full-stack solutions. I thrive in collaborative environments and love
+          turning ideas into user-friendly digital experiences.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill">
+            <h3>Languages</h3>
+            <p>Java, Python, C, JavaScript</p>
+          </div>
+          <div class="skill">
+            <h3>Frontend</h3>
+            <p>HTML, CSS, React.js, Responsive Design</p>
+          </div>
+          <div class="skill">
+            <h3>Backend</h3>
+            <p>Node.js, Express.js, MySQL</p>
+          </div>
+          <div class="skill">
+            <h3>Tools & Platforms</h3>
+            <p>Git, GitHub, Postman, LeetCode, NPTEL</p>
+          </div>
+          <div class="skill">
+            <h3>Other Skills</h3>
+            <p>Problem Solving, NLP, JWT Auth, API Integration</p>
+          </div>
+        </div>
+
+        <div class="profiles">
+          <h3>Profiles</h3>
+          <a
+            href="https://leetcode.com/mohanapriya2174"
+            target="_blank"
+            class="profile-link"
+          >
+            <i class="fas fa-code"></i> LeetCode
+          </a>
+          <a
+            href="https://github.com/mohanapriya2174"
+            target="_blank"
+            class="profile-link"
+          >
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a
+            href="https://linkedin.com/in/mohanapriya-s"
+            target="_blank"
+            class="profile-link"
+          >
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-icon">💼</div>
+            <div class="timeline-content">
+              <h3>Full-Stack Web Developer Intern @ Supernova Instruments</h3>
+              <span class="date">June 2025 - July 2025</span>
               <p>
-                I am a passionate individual with a keen interest in web
-                development, where I find joy in creating innovative solutions.
-                My problem-solving skills are honed through my proficiency in C
-                programming.
-                <br />
-                In the realm of web development, I have a solid foundation in
-                HTML, CSS, and JavaScript,react,nodeJS,expressJS. I have
-                successfully applied my skills by completing various projects
-                that showcase my abilities in crafting dynamic and visually
-                appealing websites.
-                <br />
+                Developed a full-stack Logistics Employee Management System
+                (EMS) using React.js, Node.js, and MySQL. Built role-based login
+                and integrated Google Maps API for optimized route planning.
+                Focused on dashboards, attendance, leave, and shift management.
               </p>
             </div>
           </div>
-          <button>Resume</button>
+
+          <div class="timeline-item">
+            <div class="timeline-icon">👩‍💻</div>
+            <div class="timeline-content">
+              <h3>
+                Back-End Web Developer Intern @ Clodstier Solutions Pvt. Ltd
+              </h3>
+              <span class="date">June 2024</span>
+              <p>
+                Created secure backend APIs with Node.js and Express.js,
+                implementing JWT-based authentication. Integrated MySQL database
+                and performed API testing with Postman to ensure robust and
+                seamless communication between frontend and backend.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="project" id="project">
-        <h2>PROJECTS</h2>
-        <div class="project-sec">
-          <div class="project-made">
-            <h3>Guess My Number!</h3>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="grid">
+          <div class="card">
+            <img src="melda.png" alt="MELDA Chatbot" />
+            <h3>MELDA - Mental Health Chatbot</h3>
             <p>
-              "Juss My Number is an engaging project where users guess a
-              randomly generated number. Points are awarded based on accuracy,
-              offering a suspenseful experience with hidden numbers for added
-              excitement."
+              AI-powered chatbot using fine-tuned GPT-2 models to provide
+              Cognitive Behavioral Therapy. Integrated real-time sentiment
+              analysis and deployed as a full-stack app with React.js, Node.js,
+              and Python.
             </p>
-            <a href="#" class="btn">view on GitHub</a>
+            <a href="#" class="btn-sm">View</a>
           </div>
-          <div class="project-made">
-            <h3>Pig Game</h3>
+
+          <div class="card">
+            <img src="ems.png" alt="Employee Management System" />
+            <h3>Employee Management System</h3>
             <p>
-              "Pig, a thrilling two-player dice game. Roll to accumulate points,
-              but beware the '1' – lose round points! Safeguard gains with the
-              'Hold' button, passing the turn strategically for intense
-              gameplay."
-            </p>
-            <a href="#" class="btn">view on GitHub</a>
-          </div>
-          <div class="project-made">
-            <h3>Bank Transaction App</h3>
-            <p>
-              "Developed a bank transaction app using HTML, CSS, and JavaScript.
-              It features a login system supporting multiple accounts for
-              testing (use "mp" as user ID and "1111" as the password). The app
-              includes detailed transaction records for each user."
+              Built a full-stack EMS with features like role-based login,
+              dynamic delivery assignment based on ETA & vehicle capacity,
+              Google Maps integration, and module-wise management.
             </p>
             <a
-              href="https://mohanapriya2174.github.io/bank-transfer-app/"
-              class="btn"
-              >view on GitHub</a
+              href="https://employee-management-system-dhq915ko5.vercel.app/login"
+              class="btn-sm"
+              >View</a
             >
           </div>
-          <div class="project-made">
-            <h3>pizza Menu App with react</h3>
+
+          <!-- <div class="card">
+            <img src="project3.png" alt="Hackathon Achievements" />
+            <h3>Hackathons</h3>
             <p>
-              "I created a pizza menu app using React.js, incorporating
-              components, props, and states. The app features a catchy user
-              interface, allowing users to browse and customize pizza options
-              effortlessly. The dynamic UI enhances user experience by providing
-              interactive and seamless navigation through the menu."
+              Finalist at SAI Hackfest 2024 and Top 5 team in SIMATS Hackathon
+              2024. Contributed to innovative tech solutions under pressure and
+              in collaborative environments.
             </p>
-            <a href="https://mohanapriya2174.github.io/pizza-app/" class="btn"
-              >view on GitHub</a
-            >
-          </div>
-          <div class="project-made">
-            <h3>Travel web</h3>
-            <p>
-              "a travel service website with a dynamic and responsive UI. It
-              features multiple sections, providing comprehensive travel
-              information and services. The design ensures seamless navigation
-              across devices, enhancing user experience with visually appealing
-              and interactive elements."
-            </p>
-            <a href="https://mohanapriya2174.github.io/travell-web/" class="btn"
-              >view on GitHub</a
-            >
-          </div>
+            <a href="#" class="btn-sm">View</a>
+          </div> -->
         </div>
       </div>
-      <div class="skills" id="skills">
-        <h2>Skills</h2>
-        <div class="skill-points">
-          <p>HTML</p>
-        </div>
-        <hr />
-        <div class="skill-points">
-          <p>CSS</p>
-        </div>
-        <hr />
-        <div class="skill-points">
-          <p>JavaScript</p>
-        </div>
-        <hr />
-        <div class="skill-points">
-          <p>nodeJS</p>
-        </div>
-        <hr />
-        <div class="skill-points">
-          <p>expressJS</p>
-        </div>
-        <hr />
-        <div class="skill-points">
-          <p>MYsql</p>
-        </div>
-        <hr />
-        <div class="skill-points">
-          <p>C language</p>
-        </div>
-      </div>
-      <div class="icons" id="contact">
+    </section>
+
+    <!-- Contact Section -->
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container contact-container">
         <h2>Contact</h2>
-        <div class="contact">
+        <p>
+          Feel free to reach out for collaborations, projects, or tech
+          discussions!
+        </p>
+        <div class="contact-links">
           <a
-            href="https://www.linkedin.com/in/mohanapriya-s-0345a1257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="mohanapriya2174@gmail.com"
-            ><i class="fa fa-envelopefa fa-envelope"></i
-          ></a>
+            href="mailto:mohanapriya@example.com"
+            class="contact-item"
+            target="_blank"
+          >
+            <i class="fas fa-envelope"></i> mohanapriya@example.com
+          </a>
           <a
-            href="https://www.instagram.com/mohanapriya__mona_?igshid=ZGNjOWZkYTE3MQ=="
-            ><i class="fab fa-instagram"></i
-          ></a>
+            href="https://github.com/mohanapriya2174"
+            class="contact-item"
+            target="_blank"
+          >
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a
+            href="https://linkedin.com/in/mohanapriya-s"
+            class="contact-item"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a
+            href="https://leetcode.com/mohanapriya2174"
+            class="contact-item"
+            target="_blank"
+          >
+            <i class="fas fa-code"></i> LeetCode
+          </a>
         </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <!-- <p>© 2025 Your Name</p> -->
+    </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>
